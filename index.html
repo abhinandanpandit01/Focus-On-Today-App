@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focus on Today || Alin</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 id="app-title">Focus on <span>Today</span></h1>
+      <div class="form-container">
+        <div class="form-title">
+          <h1>
+            Today <span><img src="/assests/Sun.svg" alt="" /></span>
+          </h1>
+        </div>
+        <div class="bar-wrapper">
+          <h4>Raise the bar by completing your goals!</h4>
+          <div class="bar-container">
+            <div class="bar">
+              <span id="progress-details"
+                ><span id="done">0</span>/<span id="total">3</span>
+              </span>
+              <span>Completed</span>
+            </div>
+          </div>
+        </div>
+        <div class="error-wrapper">
+          <span>Please set all the 3 goals!</span>
+        </div>
+        <div class="goals-wrapper">
+          <div class="goal-card goal-card1">
+            <div class="goal-details">
+              <input type="radio" name="goal-radio1" id="radio1" disabled />
+              <span id="goal-entryField">Add new goal...</span>
+            </div>
+          </div>
+          <div class="goal-card goal-card2">
+            <div class="goal-details">
+              <input type="radio" name="goal-radio2" id="" disabled />
+              <span id="goal-entryField">Add new goal...</span>
+            </div>
+          </div>
+          <div class="goal-card goal-card3">
+            <div class="goal-details">
+              <input type="radio" name="goal-radio3" id="" disabled />
+              <span id="goal-entryField">Add new goal...</span>
+            </div>
+          </div>
+        </div>
+        <div class="form-wrapper-footer">
+          <p id="quote"></p>
+          <span id="creator">Made with ❤️ by Alin</span>
+        </div>
+      </div>
+    </div>
+    <!-- Confetti Effect CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <!-- Local JS File -->
+    <script src="app.js"></script>
+  </body>
+</html>
